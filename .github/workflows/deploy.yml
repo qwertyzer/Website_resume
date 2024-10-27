@@ -20,13 +20,13 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          source: "../../src" 
+          source: "../../src"
           target: "/var/www/u2877307/data/www/qwertyzer.ru"
           timeout: 30s
           command_timeout: 10m
           use_insecure_cipher: false
           rm: false
-          debug: false
+          debug: true
           strip_components: 0
           overwrite: false
           tar_dereference: false
