@@ -3,7 +3,7 @@ name: Deploy to Server
 on:
   push:
     branches:
-      - main
+      - develop
 
 jobs:
   deploy:
@@ -21,7 +21,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
           source: "."
-          target: "/var/www/u2877307/data/www/qwertyzer.ru"
+          target: "/var/www/u2877307/data/www/qwertyzer.online"
           timeout: 30s
           command_timeout: 10m
           use_insecure_cipher: false
